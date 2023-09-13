@@ -1,3 +1,9 @@
+import FlexBlock from "@/components/flex/FlexBlock";
+
 export default function Home() {
-  return <div>asd</div>;
+  return (
+    <>
+      <FlexBlock />
+    </>
+  );
 }

@@ -4,8 +4,10 @@ import { Container } from "../container/Container";
 
 export default function Header() {
   return (
-    <header>
-      <Container>header</Container>
+    <header className={style.header}>
+      <Container>
+        <h1>Header</h1>
+      </Container>
     </header>
   );
 }

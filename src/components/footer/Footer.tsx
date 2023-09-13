@@ -4,8 +4,10 @@ import style from "./style.module.css";
 
 export default function Footer() {
   return (
-    <footer>
-      <Container>Footer</Container>
+    <footer className={style.footer}>
+      <Container>
+        <h1>Footer</h1>
+      </Container>
     </footer>
   );
 }
