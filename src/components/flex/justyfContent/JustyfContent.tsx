@@ -25,8 +25,21 @@ export default function JustyfContent() {
     setStart(false);
   };
 
+  let justifyContentValue = "_____   ";
+
+  if (start) {
+    justifyContentValue = "flex-start";
+  } else if (center) {
+    justifyContentValue = "center";
+  } else if (end) {
+    justifyContentValue = "flex-end";
+  }
+
   return (
     <div>
+      <span className={style.task__description}>
+        justify-content: {justifyContentValue};{" "}
+      </span>
       <div className={style.flex__group}>
         <Button text={"Start"} onClick={handleClickStart} />
         <Button text={"Center"} onClick={handleClickCenter} />
@@ -51,6 +64,7 @@ export default function JustyfContent() {
           transition={{ opacity: { duration: 0.6 }, x: { duration: 1.2 } }}
         ></motion.div>
       </motion.div>
+      <span className={style.box__description}>flex container</span>
     </div>
   );
 }
