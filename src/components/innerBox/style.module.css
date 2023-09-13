@@ -1,0 +1,7 @@
+.inner__box{
+    width: 50px;
+    height: 50%;
+    aspect-ratio: 1/1;
+    border: 1px solid #bc4749;
+    backdrop-filter: blur(40px);
+}

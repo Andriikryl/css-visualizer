@@ -1,19 +1,4 @@
-.inner__box{
-    width: 50px;
-    height: 50%;
-    aspect-ratio: 1/1;
-    border: 1px solid #bc4749;
-    backdrop-filter: blur(40px);
-}
 
-.task__description{
-    display: block;
-    color: white;
-    margin-block-end: 10px;
-    border-bottom: 1px solid #ffc300;
-    padding-block-end: 10px;
-    width: max-content;
-}
 .started{
     justify-content: start;
 }
@@ -46,25 +31,3 @@
     margin-block-end: 10px;
 }
 
-.box__description{
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-    color: white;
-    margin-block-start: 20px;
-    width: max-content;
-    border-left: 3px solid #ffc300;
-    padding-inline-start: 5px;
-}
-
-.box__description::after{
-    content: "";
-    display: block;
-    background-image: url("/arrows/arrow.svg");
-    width: 60px;
-    height: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: rotate(-32deg);
-}

@@ -1,0 +1,12 @@
+.task__description{
+    display: block;
+    color: white;
+    margin-block-end: 10px;
+    border-bottom: 1px solid #ffc300;
+    padding-block-end: 10px;
+    width: max-content;
+}
+
+.answer{
+    color: #bc4749 ;
+}

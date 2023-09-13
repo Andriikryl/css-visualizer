@@ -4,6 +4,9 @@ import style from "./style.module.css";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Button from "@/components/button/Button";
+import BlockDescription from "@/components/blockDescription/BlockDescription";
+import InnerBox from "@/components/innerBox/InnerBox";
+import TaskDescription from "@/components/taskDescription/TaskDescription";
 
 export default function JustyfContent() {
   const [end, setEnd] = useState(false);
@@ -37,9 +40,10 @@ export default function JustyfContent() {
 
   return (
     <div>
-      <span className={style.task__description}>
-        justify-content: {justifyContentValue};{" "}
-      </span>
+      <TaskDescription
+        qustion={"justify-content"}
+        answer={justifyContentValue}
+      />
       <div className={style.flex__group}>
         <Button text={"Start"} onClick={handleClickStart} />
         <Button text={"Center"} onClick={handleClickCenter} />
@@ -52,19 +56,9 @@ export default function JustyfContent() {
           [style.started]: start,
         })}
       >
-        <motion.div
-          className={clsx(style.inner__box)}
-          layout
-          initial={{ opacity: 0, x: 200 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{
-            opacity: 0,
-            x: -200,
-          }}
-          transition={{ opacity: { duration: 0.6 }, x: { duration: 1.2 } }}
-        ></motion.div>
+        <InnerBox />
       </motion.div>
-      <span className={style.box__description}>flex container</span>
+      <BlockDescription text="flex container" />
     </div>
   );
 }
