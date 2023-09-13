@@ -3,26 +3,3 @@
     height: 100dvh;
 }
 
-.inner__box{
-    width: 50px;
-    height: 50%;
-    aspect-ratio: 1/1;
-    border: 1px solid white;
-}
-.started{
-    justify-content: start;
-}
-
-.centered{
-    justify-content: center;
-}
-
-.ended{
-    justify-content: end;
-}
-
-.box{
-    padding: 40px;
-    border: 1px solid white;
-    display: flex;
-}
