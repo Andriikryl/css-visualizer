@@ -1,0 +1,89 @@
+.center__title{
+    color: white;
+    font-size: 25px;
+    margin-block-end: 45px;
+    border-bottom: 1px solid #ffc300;
+    width: max-content;
+    margin-inline: auto;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to right, #faedcd1e 1px, transparent 1px),
+    linear-gradient(to bottom, #faedcd3b 1px, transparent 1px);
+    background-size: 24px 24px;
+    padding: 40px;
+    border: 1px solid white;
+    display: flex;
+    box-shadow: 0 1px 1px rgba(247, 246, 246, 0.948), 
+    0 2px 2px rgba(226, 222, 222, 0.784), 
+    0 4px 4px rgba(243, 241, 241, 0.878), 
+    0 8px 8px rgba(240, 237, 237, 0.871);
+    backdrop-filter: blur(10px);
+    display:grid;
+}
+
+.flex__group{
+    display: flex;
+    gap: 20px;
+    margin-block-end: 10px;
+}
+
+
+.CheckboxRoot {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .CheckboxRoot:focus {
+    box-shadow: 0 0 0 2px black;
+  }
+  
+  .CheckboxIndicator {
+    color: #bc4749;
+  }
+  
+  .Label {
+    color: white;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 1;
+    border-right: 3px solid #ffc300;
+    padding-inline-end: 10px;
+  }
+  
+  .flex__group{
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid white;
+    padding: 30px;
+    height: max-content;
+    position: relative;
+  }
+
+
+.form::after{
+    content: "";
+    display: block;
+    background-image: url("/arrows/arrow.svg");
+    width: 77px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(34deg);
+    position: absolute;
+    bottom: -49px;
+    right: -74px;
+}

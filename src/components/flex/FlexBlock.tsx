@@ -5,6 +5,7 @@ import JustyfContent from "./justyfContent/JustyfContent";
 import SpacePos from "./spacePos/SpacePos";
 import FlexDiraction from "./flexDirection/FlexDiraction";
 import CenterDiv from "./centerDiv/CenterDiv";
+import GridDivCenter from "../grid/gridCenter/GridCenter";
 export default function FlexBlock() {
   return (
     <section className={style.flex__section}>
@@ -14,6 +15,7 @@ export default function FlexBlock() {
           <SpacePos />
           <FlexDiraction />
           <CenterDiv />
+          <GridDivCenter />
         </div>
       </Container>
     </section>
