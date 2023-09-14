@@ -24,6 +24,17 @@ export default function CenterDiv() {
     justifyContent: isJustifyCenter ? "center" : "initial",
     alignItems: isAlignCenter ? "center" : "initial",
   };
+
+  let justifyContentValue = "______";
+  let aliitemsCenterValue = "______";
+
+  if (isJustifyCenter) {
+    justifyContentValue = "center";
+  }
+  if (isAlignCenter) {
+    aliitemsCenterValue = "center";
+  }
+
   return (
     <div>
       <h4 className={style.center__title}>So...... how center a div?</h4>
@@ -66,6 +77,57 @@ export default function CenterDiv() {
             </label>
           </div>
         </form>
+        <div className={style.code__box}>
+          <pre>
+            <code>
+              <span className={style.part__code}>
+                .container <span className={style.parenthesis}>&#123;</span>{" "}
+              </span>{" "}
+              <span className={style.part__code}>
+                display: <span className={style.center__code}>flex</span>{" "}
+              </span>{" "}
+              <span className={style.part__code}>
+                justify-content:{" "}
+                <motion.span
+                  className={style.center__code}
+                  initial={{ opacity: 0, x: 200 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{
+                    opacity: 0,
+                    x: -200,
+                  }}
+                  transition={{
+                    opacity: { duration: 0.6 },
+                    x: { duration: 1.2 },
+                  }}
+                >
+                  {justifyContentValue}
+                </motion.span>
+                ;{" "}
+              </span>{" "}
+              <span className={style.part__code}>
+                align-items:{" "}
+                <motion.span
+                  className={style.center__code}
+                  initial={{ opacity: 0, x: 200 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{
+                    opacity: 0,
+                    x: -200,
+                  }}
+                  transition={{
+                    opacity: { duration: 0.6 },
+                    x: { duration: 1.2 },
+                  }}
+                >
+                  {aliitemsCenterValue}
+                </motion.span>
+                ;
+              </span>{" "}
+              <span className={style.parenthesis}>&#125;</span>
+            </code>
+          </pre>
+        </div>
       </div>
     </div>
   );
