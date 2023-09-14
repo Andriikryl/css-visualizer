@@ -88,38 +88,14 @@ export default function CenterDiv() {
               </span>{" "}
               <span className={style.part__code}>
                 justify-content:{" "}
-                <motion.span
-                  className={style.center__code}
-                  initial={{ opacity: 0, x: 200 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{
-                    opacity: 0,
-                    x: -200,
-                  }}
-                  transition={{
-                    opacity: { duration: 0.6 },
-                    x: { duration: 1.2 },
-                  }}
-                >
+                <motion.span className={style.center__code}>
                   {justifyContentValue}
                 </motion.span>
                 ;{" "}
               </span>{" "}
               <span className={style.part__code}>
                 align-items:{" "}
-                <motion.span
-                  className={style.center__code}
-                  initial={{ opacity: 0, x: 200 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{
-                    opacity: 0,
-                    x: -200,
-                  }}
-                  transition={{
-                    opacity: { duration: 0.6 },
-                    x: { duration: 1.2 },
-                  }}
-                >
+                <motion.span className={style.center__code}>
                   {aliitemsCenterValue}
                 </motion.span>
                 ;

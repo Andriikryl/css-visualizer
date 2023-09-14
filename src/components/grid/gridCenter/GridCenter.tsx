@@ -15,12 +15,38 @@ export default function GridDivCenter() {
     setIsPlaceItemCenter((prev) => !prev);
   };
 
+  let ItemCenter = "______";
+
+  if (isPlaceItemCenter) {
+    ItemCenter = "center";
+  }
+
   return (
     <div>
       <h4 className={style.center__title}>
         By the way you can do the same using grid
       </h4>
       <div className={style.flex__group}>
+        <div className={style.code__box}>
+          <pre>
+            <code>
+              <span className={style.part__code}>
+                .container <span className={style.parenthesis}>&#123;</span>{" "}
+              </span>{" "}
+              <span className={style.part__code}>
+                display: <span className={style.center__code}>grid</span>{" "}
+              </span>{" "}
+              <span className={style.part__code}>
+                place-items:{" "}
+                <motion.span className={style.center__code}>
+                  {ItemCenter}
+                </motion.span>
+                ;{" "}
+              </span>{" "}
+              <span className={style.parenthesis}>&#125;</span>
+            </code>
+          </pre>
+        </div>
         <form className={style.form}>
           <div style={{ display: "flex", alignItems: "center" }}>
             <Checkbox.Root
