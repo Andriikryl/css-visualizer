@@ -1,6 +1,6 @@
 .inner__box{
     width: 50px;
-    height: 50%;
+    height: 50px;
     aspect-ratio: 1/1;
     backdrop-filter: blur(40px);
 }

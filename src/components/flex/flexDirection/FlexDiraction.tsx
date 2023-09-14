@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useReducer } from "react";
 import style from "./style.module.css";
 import clsx from "clsx";
 import { motion } from "framer-motion";
@@ -8,45 +8,97 @@ import BlockDescription from "@/components/blockDescription/BlockDescription";
 import InnerBox from "@/components/innerBox/InnerBox";
 import TaskDescription from "@/components/taskDescription/TaskDescription";
 
-export default function FlexDiraction() {
-  const [end, setEnd] = useState(false);
-  const [center, setCenter] = useState(false);
-  const [start, setStart] = useState(false);
-  const [rowRevers, setRowRevers] = useState(false);
+interface State {
+  start: boolean;
+  center: boolean;
+  end: boolean;
+  rowRevers: boolean;
+}
+
+type Action =
+  | { type: "SET_START" }
+  | { type: "SET_CENTER" }
+  | { type: "SET_END" }
+  | { type: "SET_ROW_REVERS" };
+
+const initialState = {
+  start: false,
+  center: false,
+  end: false,
+  rowRevers: false,
+};
+
+const actionTypes = {
+  SET_START: "SET_START",
+  SET_CENTER: "SET_CENTER",
+  SET_END: "SET_END",
+  SET_ROW_REVERS: "SET_ROW_REVERS",
+};
+
+function reducer(state: any, action: { type: any }) {
+  switch (action.type) {
+    case actionTypes.SET_START:
+      return {
+        start: true,
+        center: false,
+        end: false,
+        rowRevers: false,
+      };
+    case actionTypes.SET_CENTER:
+      return {
+        start: false,
+        center: true,
+        end: false,
+        rowRevers: false,
+      };
+    case actionTypes.SET_END:
+      return {
+        start: false,
+        center: false,
+        end: true,
+        rowRevers: false,
+      };
+    case actionTypes.SET_ROW_REVERS:
+      return {
+        start: false,
+        center: false,
+        end: false,
+        rowRevers: true,
+      };
+    default:
+      return state;
+  }
+}
+
+export default function FlexDirection() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   const handleClickColumn = () => {
-    setStart(true);
-    setEnd(false);
-    setCenter(false);
-    setRowRevers(false);
+    dispatch({ type: actionTypes.SET_START });
   };
-  const handleClickRow = () => {
-    setEnd(true);
-    setStart(false);
-    setCenter(false);
-    setRowRevers(false);
-  };
+
   const handleClickColumnReverse = () => {
-    setCenter(true);
-    setEnd(false);
-    setStart(false);
-    setRowRevers(false);
+    dispatch({ type: actionTypes.SET_CENTER });
   };
+
+  const handleClickRow = () => {
+    dispatch({ type: actionTypes.SET_END });
+  };
+
   const handleClickRowReverse = () => {
-    setRowRevers(true);
-    setCenter(false);
-    setEnd(false);
-    setStart(false);
+    dispatch({ type: actionTypes.SET_ROW_REVERS });
   };
+
   let justifyContentValue = "_____   ";
 
-  if (start) {
+  if (state.start) {
     justifyContentValue = "column";
-  } else if (center) {
+  } else if (state.center) {
     justifyContentValue = "column-reverse";
-  } else if (end) {
+  } else if (state.end) {
     justifyContentValue = "row";
-  } else if (rowRevers) {
-    justifyContentValue = "row-revers";
+  } else if (state.rowRevers) {
+    justifyContentValue = "row-reverse";
   }
 
   return (
@@ -63,10 +115,10 @@ export default function FlexDiraction() {
       </div>
       <motion.div
         className={clsx(style.box, {
-          [style.centered]: center,
-          [style.ended]: end,
-          [style.started]: start,
-          [style.rowRevers]: rowRevers,
+          [style.centered]: state.center,
+          [style.ended]: state.end,
+          [style.started]: state.start,
+          [style.rowRevers]: state.rowRevers,
         })}
       >
         <InnerBox />
