@@ -1,0 +1,14 @@
+.blend{
+    margin-block: 100px;
+}
+
+.blend__title{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    border-bottom: 3px solid #ffc300;
+    width: max-content;
+    margin-inline: auto;
+    margin-block-end: 40px;
+}
+

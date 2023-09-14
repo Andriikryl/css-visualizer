@@ -1,0 +1,91 @@
+.flex__group{
+    padding: 20px;
+    width: max-content;
+    display: flex;
+    gap: 20px;
+    border: 1px solid white;
+}
+
+.blend__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image__box{
+    position: relative;
+    z-index: 1;
+}
+
+.blend__lear{
+    background: hsl(0, 100%, 50%);
+    width: 200px;
+    height: 300px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.box__title{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-bottom: none;
+}
+
+.blend__box:nth-child(1) .blend__lear{
+    mix-blend-mode: color;
+}
+.blend__box:nth-child(2) .blend__lear{
+    mix-blend-mode: color-burn;
+}
+.blend__box:nth-child(3) .blend__lear{
+    mix-blend-mode: color-dodge;
+}
+.blend__box:nth-child(4) .blend__lear{
+ mix-blend-mode: darken;
+}
+.blend__box:nth-child(5) .blend__lear{
+ mix-blend-mode: difference;
+}
+.blend__box:nth-child(6) .blend__lear{
+ mix-blend-mode: exclusion;
+}
+.blend__box:nth-child(7) .blend__lear{
+ mix-blend-mode: hard-light;
+}
+.blend__box:nth-child(8) .blend__lear{
+ mix-blend-mode: hue;
+}
+.blend__box:nth-child(8) .blend__lear{
+ mix-blend-mode: lighten;
+}
+.blend__box:nth-child(9) .blend__lear{
+ mix-blend-mode: luminosity;
+}
+.blend__box:nth-child(10) .blend__lear{
+    mix-blend-mode: multiply;
+}
+  
+.blend__box:nth-child(11) .blend__lear{
+ mix-blend-mode: normal;
+}
+.blend__box:nth-child(12) .blend__lear{
+ mix-blend-mode: overlay;
+}
+.blend__box:nth-child(13) .blend__lear{
+ mix-blend-mode: saturation;
+}
+.blend__box:nth-child(14) .blend__lear{
+ mix-blend-mode: screen;
+}
+
+.blend__box:nth-child(15) .blend__lear{
+ mix-blend-mode: soft-light;
+}
+
+  
+ 

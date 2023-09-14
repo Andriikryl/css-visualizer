@@ -1,0 +1,70 @@
+.blend__constructor{
+    margin-block-end: 50px;
+    overflow: hidden;
+}
+
+.blend__box{
+    width: 400px;
+    height: 500px;
+    background-color: brown;
+    mix-blend-mode: difference;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    cursor:grab;
+}
+
+.flex__group{
+    position: relative;
+    z-index: 1;
+}
+
+.flex__group{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.SliderRoot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    touch-action: none;
+    width: 200px;
+    height: 20px;
+  }
+  
+  .SliderTrack {
+    background-color: hsl(0, 100%, 50%);
+    position: relative;
+    flex-grow: 1;
+    height: 3px;
+  }
+  
+  .SliderRange {
+    position: absolute;
+    background-color: #ffc300;
+    height: 100%;
+  }
+  
+  .SliderThumb {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #1d1d1d;
+    border: 1px solid white;
+  }
+
+  .SliderThumb:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px var(--black-a8);
+  }
+
+  .button__group{
+    margin-block-start: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 400;
+  }
