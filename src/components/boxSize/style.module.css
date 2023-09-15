@@ -1,0 +1,61 @@
+.boxSize{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-block: 100px;
+}
+
+.boxSize__title{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+    border-bottom: 1px solid #ffc300;
+    width: max-content;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.margin{
+    display: block;
+    color: brown;
+}
+
+.border{
+    width: 250px;
+    height: 250px;
+    margin-inline: auto;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.padding{
+    width: 150px;
+    height: 150px;
+    margin-inline: auto;
+    border: 1px solid white;
+    
+}
+
+.content{
+    width: 100px;
+    height: 100px;
+    margin-inline: auto;
+    border: 1px solid white;
+}
+
+.border span{
+    color: chartreuse;
+}
+
+.padding span{
+    color: chocolate;
+}
+
+.content span{
+    color: tomato;
+}
