@@ -1,0 +1,10 @@
+.title{
+    padding: 20px;
+    font-size: 34px;
+    color: white;
+    text-transform: uppercase;
+    border: 3px solid #ffc300;
+    width: max-content;
+    margin-block-end: 20px;
+    background-color: black;
+}

@@ -60,6 +60,8 @@
     display: flex;
     justify-content: end;
     gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .form{
@@ -134,4 +136,21 @@
 
 .center__code{
   color: #80ed99;
+}
+
+@media (max-width:700px) {
+  .center__title{
+    width: auto;
+  }
+}
+
+@media (max-width:740px) {
+  .form::after{
+    display: none;
+  }
+  .code__box::after{
+    transform: rotate(-105deg);
+    bottom: -59px;
+    right: 30px;
+  }
 }

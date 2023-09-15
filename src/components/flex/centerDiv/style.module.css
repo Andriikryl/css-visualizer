@@ -27,6 +27,8 @@
     display: flex;
     gap: 20px;
     margin-block-end: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -131,4 +133,17 @@
 
 .center__code{
   color: #80ed99;
+}
+
+@media (max-width:740px) {
+  .form::after{
+    transform: rotate(-100deg);
+    bottom: 169px;
+    left: 204px;
+  }
+  .code__box::after{
+    transform: rotate(184deg) matrix(0, 1, 1, 0, 0, 0);
+    bottom: 279px;
+    left: 96px;
+  }
 }

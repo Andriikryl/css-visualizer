@@ -7,10 +7,12 @@ import FlexDiraction from "./flexDirection/FlexDiraction";
 import CenterDiv from "./centerDiv/CenterDiv";
 import GridDivCenter from "../grid/gridCenter/GridCenter";
 import AlieItems from "./alieItems/AlieItems";
+import TitleBlock from "../TitleBlock/TitleBlock";
 export default function FlexBlock() {
   return (
     <section className={style.flex__section}>
       <Container>
+        <TitleBlock text="Flex" />
         <div className={style.flex__group}>
           <JustyfContent />
           <SpacePos />

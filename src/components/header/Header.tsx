@@ -14,6 +14,11 @@ const headerLinks = [
     title: "Blend-mode",
     href: "/blend-mod",
   },
+  {
+    id: 3,
+    title: "3D",
+    href: "/3D",
+  },
 ];
 
 export default function Header() {
