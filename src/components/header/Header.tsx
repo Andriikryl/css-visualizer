@@ -19,6 +19,11 @@ const headerLinks = [
     title: "3D",
     href: "/3D",
   },
+  {
+    id: 4,
+    title: "react",
+    href: "/react",
+  },
 ];
 
 export default function Header() {
