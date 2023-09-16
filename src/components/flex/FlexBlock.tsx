@@ -8,6 +8,7 @@ import CenterDiv from "./centerDiv/CenterDiv";
 import GridDivCenter from "../grid/gridCenter/GridCenter";
 import AlieItems from "./alieItems/AlieItems";
 import TitleBlock from "../TitleBlock/TitleBlock";
+import FlexThree from "./flexThree/FlexThree";
 export default function FlexBlock() {
   return (
     <section className={style.flex__section}>
@@ -18,6 +19,7 @@ export default function FlexBlock() {
           <SpacePos />
           <AlieItems />
           <FlexDiraction />
+          <FlexThree />
           <CenterDiv />
           <GridDivCenter />
         </div>
