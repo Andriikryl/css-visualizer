@@ -30,7 +30,6 @@
     position: relative;
 }
 
-
 .component__box:nth-child(even):after{
     content: "";
     display: block;
