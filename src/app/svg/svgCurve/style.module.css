@@ -4,4 +4,17 @@
 }
 
 
+.label{
+    color: white;
+}
 
+
+.value{
+    color: #ffc300;
+}
+
+.curev__group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+    gap: 20px; 
+}

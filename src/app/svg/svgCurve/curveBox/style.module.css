@@ -10,4 +10,5 @@
     0 4px 4px rgba(243, 241, 241, 0.878), 
     0 8px 8px rgba(240, 237, 237, 0.871);
     backdrop-filter: blur(10px);
+    max-width: 300px;
 }
