@@ -18,6 +18,8 @@
     gap: 20px;
     position: relative;
     width: max-content;
+    min-width: 100px;
+    min-height: 50px;
 }
 
 .flex__group::after{
