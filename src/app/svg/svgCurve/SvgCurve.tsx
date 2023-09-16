@@ -3,6 +3,9 @@ import React from "react";
 import style from "./style.module.css";
 import { Container } from "@/components/container/Container";
 import BasisClosed from "@/components/curves/basis-closed";
+import Line from "@/components/curves/line";
+import CurveBox from "./curveBox/CurveBox";
+import CurveTitle from "./curveTitle/CurveTitle";
 
 const data: [number, number][] = [
   [25, 50],
@@ -22,8 +25,8 @@ export default function SvgCurve() {
     <section className={style.curve__section}>
       <Container>
         <div>
-          <div className={style.curve__box}>
-            <h3 className={style.curve__title}>Basis-closed-curve</h3>
+          <CurveBox>
+            <CurveTitle text="Basis-closed-curve" />
             <svg
               className={style.svg}
               width="200"
@@ -32,7 +35,13 @@ export default function SvgCurve() {
             >
               <BasisClosed data={data} />
             </svg>
-          </div>
+          </CurveBox>
+          <CurveBox>
+            <CurveTitle text="Line" />
+            <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+              <Line data={data} />
+            </svg>
+          </CurveBox>
         </div>
       </Container>
     </section>
