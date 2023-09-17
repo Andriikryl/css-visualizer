@@ -42,7 +42,7 @@ export default function RePenReg() {
       }
     : {};
   return (
-    <div>
+    <div className={style.main__box}>
       <p className={style.text__Info}>
         A promise can be in one of three states:
       </p>

@@ -10,3 +10,11 @@
     border-bottom: 3px solid #ffc300;
     margin-block-end: 30px;
 }
+
+.text__descriptio{
+    color: white;
+    font-size: 20px;
+    border-left: 3px solid #ffc300;
+    padding-inline-start: 20px;
+    margin-block-end: 20px;
+}
