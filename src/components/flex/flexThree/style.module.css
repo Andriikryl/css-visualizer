@@ -1,3 +1,11 @@
+.main__title{
+  width: max-content;
+  color: white;
+  font-size: 30px;
+  border-bottom: 3px solid #ffc300;
+  margin-block-end: 30px;
+}
+
 .box{
     background-image: linear-gradient(to right, #faedcd1e 1px, transparent 1px),
     linear-gradient(to bottom, #faedcd3b 1px, transparent 1px);

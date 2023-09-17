@@ -213,6 +213,7 @@ export default function FlexThree() {
 
   return (
     <div>
+      <h3 className={style.main__title}>use all your knowledge</h3>
       <div className={style.flex__group}>
         <div className={style.button__box}>
           <div className={style.button__group}>

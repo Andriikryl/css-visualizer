@@ -1,0 +1,12 @@
+.promises__section{
+    padding-block: 100px;
+}
+
+.promises__title{
+    width: max-content;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ffc300;
+    margin-block-end: 30px;
+}
