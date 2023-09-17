@@ -96,6 +96,7 @@
 
   .button__box{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
@@ -154,9 +155,15 @@
       bottom: 169px;
       left: 204px;
     }
+  }
+
+  @media (max-width:940px) {
     .code__box::after{
       transform: rotate(184deg) matrix(0, 1, 1, 0, 0, 0);
-      bottom: 279px;
-      left: 96px;
+      top: -60px;
+      left: 128px;
+    }
+    .flex__group{
+      justify-content: center;
     }
   }
