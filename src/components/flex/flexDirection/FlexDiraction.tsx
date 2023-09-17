@@ -7,6 +7,7 @@ import Button from "@/components/button/Button";
 import BlockDescription from "@/components/blockDescription/BlockDescription";
 import InnerBox from "@/components/innerBox/InnerBox";
 import TaskDescription from "@/components/taskDescription/TaskDescription";
+import { MainField } from "@/components/mainField/MainField";
 
 interface State {
   start: boolean;
@@ -113,20 +114,20 @@ export default function FlexDirection() {
         <Button text={"Row"} onClick={handleClickRow} />
         <Button text={"Row-reverse"} onClick={handleClickRowReverse} />
       </div>
-      <motion.div
+      <MainField
         className={clsx(style.box, {
           [style.centered]: state.center,
           [style.ended]: state.end,
           [style.started]: state.start,
           [style.rowRevers]: state.rowRevers,
-        })}
+        }, style.box__counters)}
       >
         <InnerBox />
         <InnerBox />
         <InnerBox />
         <InnerBox />
         <InnerBox />
-      </motion.div>
+      </MainField>
       <BlockDescription text="flex container" />
     </div>
   );

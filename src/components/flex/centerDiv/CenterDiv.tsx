@@ -7,6 +7,7 @@ import BlockDescription from "@/components/blockDescription/BlockDescription";
 import InnerBox from "@/components/innerBox/InnerBox";
 import * as Checkbox from "@radix-ui/react-checkbox";
 import { CheckIcon } from "@radix-ui/react-icons";
+import CodeBlock from "@/components/codeBlock/CodeBlock";
 
 export default function CenterDiv() {
   const [isJustifyCenter, setIsJustifyCenter] = useState(false);
@@ -77,33 +78,15 @@ export default function CenterDiv() {
             </label>
           </div>
         </form>
-        <div className={style.code__box}>
-          <pre>
-            <code>
-              <span className={style.part__code}>
-                .container <span className={style.parenthesis}>&#123;</span>{" "}
-              </span>{" "}
-              <span className={style.part__code}>
-                display: <span className={style.center__code}>flex</span>{" "}
-              </span>{" "}
-              <span className={style.part__code}>
-                justify-content:{" "}
-                <motion.span className={style.center__code}>
-                  {justifyContentValue}
-                </motion.span>
-                ;{" "}
-              </span>{" "}
-              <span className={style.part__code}>
-                align-items:{" "}
-                <motion.span className={style.center__code}>
-                  {aliitemsCenterValue}
-                </motion.span>
-                ;
-              </span>{" "}
-              <span className={style.parenthesis}>&#125;</span>
-            </code>
-          </pre>
-        </div>
+        <CodeBlock
+          classN={".container"}
+          propertyOne={"display"}
+          valueOne={"flex"}
+          propertyTwo={"justify-content"}
+          valueTwo={justifyContentValue}
+          propertyThree={"align-items"}
+          valueThree={aliitemsCenterValue}
+        />
       </div>
     </div>
   );

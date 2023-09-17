@@ -7,6 +7,7 @@ import Button from "@/components/button/Button";
 import BlockDescription from "@/components/blockDescription/BlockDescription";
 import InnerBox from "@/components/innerBox/InnerBox";
 import TaskDescription from "@/components/taskDescription/TaskDescription";
+import { MainField } from "@/components/mainField/MainField";
 
 export default function JustyfContent() {
   const [end, setEnd] = useState(false);
@@ -49,7 +50,7 @@ export default function JustyfContent() {
         <Button text={"Center"} onClick={handleClickCenter} />
         <Button text={"End"} onClick={handleClickEnd} />
       </div>
-      <motion.div
+      <MainField
         className={clsx(style.box, {
           [style.centered]: center,
           [style.ended]: end,
@@ -57,7 +58,7 @@ export default function JustyfContent() {
         })}
       >
         <InnerBox />
-      </motion.div>
+      </MainField>
       <BlockDescription text="flex container" />
     </div>
   );

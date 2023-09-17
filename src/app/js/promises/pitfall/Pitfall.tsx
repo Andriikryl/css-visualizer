@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "@/components/button/Button";
 import style from "./style.module.css";
+import { MainField } from "@/components/mainField/MainField";
 
 export default function Pitfall() {
   const [animationResolve, setAnimationresolve] = useState(false);
@@ -28,7 +29,7 @@ export default function Pitfall() {
     : {};
   return (
     <div>
-      <div className={style.flex__box}>
+      <MainField className={style.flex__size}>
         <div className={style.animation__block}>
           <div className={style.resolve}></div>
           <div className={style.pending}>
@@ -172,7 +173,7 @@ export default function Pitfall() {
             </code>
           </pre>
         </div>
-      </div>
+      </MainField>
       <div className={style.button__group}>
         <Button text={"Fulfilled"} onClick={startAnimationResolve} />
         <Button text={"Reset"} onClick={startAnimationOff} />

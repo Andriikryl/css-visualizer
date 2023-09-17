@@ -1,0 +1,61 @@
+.code__box{
+    border: 1px solid white;
+    height: max-content;
+    padding: 40px;
+    position: relative;
+  }
+    .code{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }  
+  .code__box::after{
+    content: "";
+    display: block;
+    background-image: url("/arrows/arrow.svg");
+    width: 77px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform:  rotate(90deg) matrix(0, 1, 1, 0, 0, 0);
+    position: absolute;
+    bottom: 70px;
+    left: -87px;
+  }
+  
+  .part__code{
+    display: block;
+    color: white;
+  }
+  
+  
+  .part__code:not(:first-child){
+    margin-inline-start: 25px;
+  }
+  
+  
+  .part__code:nth-child(1){
+    color: #bbd0ff; 
+  }
+  
+  .parenthesis{
+    color: #ef233c;
+  }
+  
+  .center__code{
+    color: #80ed99;
+  }
+  
+  @media (max-width:740px) {
+    .form::after{
+      transform: rotate(-100deg);
+      bottom: 169px;
+      left: 204px;
+    }
+    .code__box::after{
+      transform: rotate(184deg) matrix(0, 1, 1, 0, 0, 0);
+      bottom: 279px;
+      left: 96px;
+    }
+  }

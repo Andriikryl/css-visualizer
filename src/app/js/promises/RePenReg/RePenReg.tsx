@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
 import Button from "@/components/button/Button";
+import { MainField } from "@/components/mainField/MainField";
 export default function RePenReg() {
   const [animationResolve, setAnimationresolve] = useState(false);
   const [animationPending, setAnimatinPending] = useState(false);
@@ -46,7 +47,7 @@ export default function RePenReg() {
       <p className={style.text__Info}>
         A promise can be in one of three states:
       </p>
-      <div className={style.flex__box}>
+      <MainField className={style.flex__size}>
         <div className={style.animation__block}>
           <div className={style.resolve}></div>
           <div className={style.pending}>
@@ -87,7 +88,7 @@ export default function RePenReg() {
             </motion.p>
           )}
         </motion.div>
-      </div>
+      </MainField>
       <div className={style.button__group}>
         <Button text={"Fulfilled"} onClick={startAnimationResolve} />
         <Button text="Pendibg" onClick={startAnimationPending} />

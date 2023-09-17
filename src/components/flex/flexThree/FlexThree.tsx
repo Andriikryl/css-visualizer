@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/button/Button";
 import BlockDescription from "@/components/blockDescription/BlockDescription";
 import InnerBox from "@/components/innerBox/InnerBox";
+import { MainField } from "@/components/mainField/MainField";
 
 export default function FlexThree() {
   const [isRowActive, setIsRowActive] = useState(false);
@@ -321,28 +322,32 @@ export default function FlexThree() {
           </pre>
         </div>
       </div>
-      <motion.div
-        className={clsx(style.box, {
-          [style.row]: row,
-          [style.column]: column,
-          [style.justyCenter]: justyCenter,
-          [style.justyStart]: justyStart,
-          [style.justyEnd]: justyEnd,
-          [style.justySpaceBet]: justySpaceBet,
-          [style.justySpaceArr]: justySpaceArr,
-          [style.justySpaceEven]: justySpaceEven,
-          [style.alieCenter]: alieCenter,
-          [style.alieStart]: alieStart,
-          [style.alieEnd]: alieEnd,
-          [style.alieBesLine]: alieBesLine,
-        })}
+      <MainField
+        className={clsx(
+          style.box,
+          {
+            [style.row]: row,
+            [style.column]: column,
+            [style.justyCenter]: justyCenter,
+            [style.justyStart]: justyStart,
+            [style.justyEnd]: justyEnd,
+            [style.justySpaceBet]: justySpaceBet,
+            [style.justySpaceArr]: justySpaceArr,
+            [style.justySpaceEven]: justySpaceEven,
+            [style.alieCenter]: alieCenter,
+            [style.alieStart]: alieStart,
+            [style.alieEnd]: alieEnd,
+            [style.alieBesLine]: alieBesLine,
+          },
+          style.box__size
+        )}
       >
         <InnerBox />
         <InnerBox />
         <InnerBox />
         <InnerBox />
         <InnerBox />
-      </motion.div>
+      </MainField>
       <BlockDescription text="flex container" />
     </div>
   );
