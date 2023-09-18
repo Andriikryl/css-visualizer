@@ -1,18 +1,44 @@
 .header{
-    padding: 20px;
+    padding-block: 20px;
     border-bottom: 1px solid white;
     color: white;
+}
+
+.header__title{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav{
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #1d1d1d;
+    width: 50%;
+    opacity: 1;
+    z-index: 900;
 }
 
 .nav__list{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
-    align-items: center;
 }
 
 .list__item{
     list-style: none;
+    border-bottom: 1px solid white;
+    padding-block-end: 20px;
 }
 
 .item__link{

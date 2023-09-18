@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import style from "./style.module.css";
 import { Container } from "../container/Container";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import Button from "../button/Button";
 
 const headerLinks = [
   {
@@ -37,23 +40,46 @@ const headerLinks = [
 ];
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  function handelClickOpen() {
+    setIsOpen((prev) => !prev);
+  }
+
   return (
     <header className={style.header}>
       <Container>
         <div className={style.header__box}>
-          <nav className={style.nav}>
-            <ul className={style.nav__list}>
+          <Link href={"/"} className={style.header__title}>
+            header
+          </Link>
+          <Button
+            text="open"
+            className={style.button}
+            onClick={handelClickOpen}
+          ></Button>
+          <motion.nav
+            className={style.nav}
+            initial={{ x: -300 }}
+            animate={{ x: isOpen ? 0 : "-100%" }}
+          >
+            <motion.ul className={style.nav__list}>
               {headerLinks.map((link) => {
                 return (
-                  <li className={style.list__item} key={link.id}>
+                  <motion.li
+                    className={style.list__item}
+                    key={link.id}
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 2.2 }}
+                  >
                     <Link className={style.item__link} href={link.href}>
                       {link.title}
                     </Link>
-                  </li>
+                  </motion.li>
                 );
               })}
-            </ul>
-          </nav>
+            </motion.ul>
+          </motion.nav>
         </div>
       </Container>
     </header>
