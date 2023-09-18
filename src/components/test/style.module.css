@@ -1,0 +1,11 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list__item{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,40 @@
+.map{
+    padding-block: 100px;
+}
+.map__title{
+    width: max-content;
+    color: white;
+    font-size: 25px;
+    border-bottom: 3px solid #ffc300;
+    margin-block-end: 20px;
+}
+
+.items__box{
+    background-color: white;
+    padding: 20px;
+}
+
+.item__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item__title{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-block-end: 10px;
+}
+
+.list__item{
+    list-style: none;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-left: 8px solid #ffc300;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
