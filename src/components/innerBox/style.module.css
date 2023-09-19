@@ -31,3 +31,10 @@
 .inner__box:nth-child(6){
     border: 1px solid #57cc99;
 }
+
+@media (max-width: 500px) {
+    .inner__box{
+        width: 25px;
+        height: 25px;
+    }
+}

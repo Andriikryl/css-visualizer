@@ -1,5 +1,6 @@
 .box{
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .grow__title{

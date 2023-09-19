@@ -88,3 +88,10 @@
     left: -87px;
 }
 
+@media (max-width: 710px) {
+  .form::after{
+    transform: rotate(-96deg);
+    bottom: 163px;
+    left: 236px;
+  }
+}
