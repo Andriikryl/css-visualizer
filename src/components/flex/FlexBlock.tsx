@@ -9,6 +9,7 @@ import GridDivCenter from "../grid/gridCenter/GridCenter";
 import AlieItems from "./alieItems/AlieItems";
 import TitleBlock from "../TitleBlock/TitleBlock";
 import FlexThree from "./flexThree/FlexThree";
+import Grow from "./grow/Grow";
 export default function FlexBlock() {
   return (
     <section className={style.flex__section}>
@@ -22,6 +23,7 @@ export default function FlexBlock() {
           <FlexThree />
           <CenterDiv />
           <GridDivCenter />
+          <Grow />
         </div>
       </Container>
     </section>

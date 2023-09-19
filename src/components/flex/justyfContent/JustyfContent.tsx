@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
 import clsx from "clsx";
-import { motion } from "framer-motion";
 import Button from "@/components/button/Button";
 import BlockDescription from "@/components/blockDescription/BlockDescription";
 import InnerBox from "@/components/innerBox/InnerBox";

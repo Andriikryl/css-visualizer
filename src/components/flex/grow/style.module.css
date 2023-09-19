@@ -1,0 +1,37 @@
+.box{
+    gap: 20px;
+}
+
+.grow__title{
+    width: max-content;
+    font-size: 30px;
+    color: white;
+    border-bottom: 1px solid #ffc300;
+    margin-block-end: 20px;
+}
+
+.inner__box{
+    flex-grow: 1;
+    height: 100px;
+    background-color: #ffc300;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.value{
+    color: white;
+    font-size: 20px;
+}
+
+.grow__description{
+    font-size: 20px;
+    color: white;
+    margin-block-end: 10px;
+    border-left: 3px solid #ffc300;
+    padding-inline-start: 10px;
+}
+
+.button{
+    margin-block-end: 10px;
+}
