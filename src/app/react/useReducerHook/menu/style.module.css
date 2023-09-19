@@ -1,0 +1,47 @@
+.menu__box{
+    display: flex;
+    border: 1px solid white;
+    gap: 20px;
+    padding: 30px;
+}
+
+.button{
+    padding: 10px 15px;
+    border: 1px solid white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
+.button__group{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content__text{
+    color: white;
+    font-size: 20px;
+}
+
+.content__box{
+    border: 1px solid #ffc300;
+    padding: 30px;
+}
+
+.code__box{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ffc300;
+    margin-inline-start: auto;
+}
+
+.code{
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.scope{
+    display: block;
+}

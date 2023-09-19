@@ -1,0 +1,30 @@
+.reducer{
+    padding-block: 100px;
+    border-bottom: 1px solid white;
+}
+.reducer__title{
+    color: white;
+    font-size: 20px;
+    width: max-content;
+    border-bottom: 1px solid #ffc300;
+    margin-block-end: 20px;
+}
+
+.accordion__body{
+    color: white;
+    padding-block-start: 20px;
+}
+
+.code__box{
+    background-color: white;
+    padding: 20px;
+    margin-block-end: 10px;
+}
+
+.faq__box{
+    margin-block-end: 30px;
+}
+
+.code{
+    font-size: 20px;
+}

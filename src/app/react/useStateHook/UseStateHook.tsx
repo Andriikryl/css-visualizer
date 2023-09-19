@@ -13,7 +13,7 @@ export default function UseStateHook() {
   return (
     <section className={style.state__section}>
       <Container>
-        <h3 className={style.state__title}>Use State</h3>
+        <h3 className={style.state__title}>useState</h3>
         <MainField className={style.state__box}>
           <pre className={style.code__box}>
             <code className={style.code}>
