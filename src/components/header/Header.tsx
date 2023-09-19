@@ -59,19 +59,14 @@ export default function Header() {
           ></Button>
           <motion.nav
             className={style.nav}
-            initial={{ x: -300 }}
+            initial={{ x: -3000 }}
             animate={{ x: isOpen ? 0 : "-100%" }}
+            transition={{ duration: 0.5 }}
           >
             <motion.ul className={style.nav__list}>
               {headerLinks.map((link) => {
                 return (
-                  <motion.li
-                    className={style.list__item}
-                    key={link.id}
-                    initial={{ opacity: 0, y: 100 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 2.2 }}
-                  >
+                  <motion.li className={style.list__item} key={link.id}>
                     <Link className={style.item__link} href={link.href}>
                       {link.title}
                     </Link>

@@ -1,0 +1,24 @@
+.margin__section{
+    padding-block: 100px;
+}
+
+.margin__title{
+    font-size: 20px;
+    color: white;
+    width: max-content;
+    border-bottom: 1px solid #ffc300;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+
+.box{
+    gap: 20px;
+}
+
+.left{
+    margin-inline-start: auto;
+}
+
+.inprogress{
+    color: red;
+}
