@@ -1,0 +1,45 @@
+.flex__group{
+    margin-block: 50px;
+    display: flex;
+    border: 1px solid white;
+    max-width: 800px;
+    padding: 30px;
+    margin-inline: auto;
+    justify-content: center;
+    gap: 50px;  
+}
+
+.comparison__title{
+    color: white;
+    border-bottom: 1px solid #ffc300;
+    margin-block-end: 10px;
+}
+
+.inner__box{
+    flex-grow: 1;
+    width: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    padding: 10px 15px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.code{
+    margin-block-start: 10px;
+    font-size: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.main__title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-block-start: 50px;
+}

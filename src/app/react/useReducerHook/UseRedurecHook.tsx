@@ -7,6 +7,7 @@ import Accordion from "@/components/accordion/Accordion";
 import Menu from "./menu/Menu";
 import { Steps } from "./steps/Steps";
 import { Names } from "./names/Names";
+import Сomparison from "./comparison/Сomparison";
 
 const stepsData = ["Step 1 content", "Step 2 content", "Step 3 content"];
 
@@ -32,6 +33,7 @@ export default function UseRedurecHook() {
             <Steps steps={stepsData} />
           </div>
           <Names />
+          <Сomparison />
         </div>
       </Container>
     </section>
