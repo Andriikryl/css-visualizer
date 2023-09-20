@@ -5,6 +5,9 @@ import style from "./style.module.css";
 import { defaultFAQs } from "./defaultValues.tsx";
 import Accordion from "@/components/accordion/Accordion";
 import Menu from "./menu/Menu";
+import { Steps } from "./steps/Steps";
+
+const stepsData = ["Step 1 content", "Step 2 content", "Step 3 content"];
 
 export default function UseRedurecHook() {
   return (
@@ -22,7 +25,11 @@ export default function UseRedurecHook() {
               <Accordion key={i} title={faq.question} body={faq.answer} />
             ))}
           </div>
+          <p className={style.exemples}>useReducer exemples</p>
           <Menu />
+          <div>
+            <Steps steps={stepsData} />
+          </div>
         </div>
       </Container>
     </section>

@@ -28,3 +28,11 @@
 .code{
     font-size: 20px;
 }
+
+.exemples{
+    color: white;
+    font-size: 20px;
+    margin-block-end: 20px;
+    border-left: 3px solid #ffc300;
+    padding-inline-start: 10px;
+}
