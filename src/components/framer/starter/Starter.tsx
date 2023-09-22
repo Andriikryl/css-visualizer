@@ -4,7 +4,7 @@ import { MainField } from "@/components/mainField/MainField";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
-import { InputFrame } from "./InputFrame";
+import { InputFrame } from "../InputFrame";
 import Button from "@/components/button/Button";
 
 export default function Starter() {
@@ -18,7 +18,7 @@ export default function Starter() {
   };
 
   return (
-    <div>
+    <div className={style.starter}>
       <Button text="Refresh" onClick={resetValues} />
       <MainField className={style.main__box}>
         <motion.div
