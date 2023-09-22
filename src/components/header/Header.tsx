@@ -37,6 +37,11 @@ const headerLinks = [
     title: "svg",
     href: "/svg",
   },
+  {
+    id: 7,
+    title: "ui",
+    href: "/ui",
+  },
 ];
 
 export default function Header() {
