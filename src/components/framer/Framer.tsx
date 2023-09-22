@@ -4,6 +4,7 @@ import style from "./style.module.css";
 import Starter from "./starter/Starter";
 import Transition from "./transition/Transition";
 import LayoutAnimation from "./layoutAnimation/LayoutAnimation";
+import GesturesAnimation from "./gesturesAnimation/GesturesAnimation";
 
 export default function Framer() {
   return (
@@ -13,6 +14,7 @@ export default function Framer() {
         <Starter />
         <Transition />
         <LayoutAnimation />
+        <GesturesAnimation />
       </Container>
     </section>
   );

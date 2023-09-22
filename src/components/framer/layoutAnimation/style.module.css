@@ -1,3 +1,6 @@
+.layout{
+    margin-block-end: 40px;
+}
 .layout__title{
     font-size: 30px;
     color: white;

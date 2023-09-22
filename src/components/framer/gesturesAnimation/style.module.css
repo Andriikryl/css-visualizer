@@ -1,0 +1,40 @@
+.gestures__title{
+    font-size: 30px;
+    color: white;
+    width: max-content;
+    border-bottom: 3px solid #ffc300;
+    margin-block-end: 20px;
+}
+
+.box{
+    min-height: 300px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner__box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    display: grid;
+    place-items: center;
+}
+
+.inner__hover{
+    color: white;
+    font-size: 20px;
+}
+
+.hover__box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ffc300;
+    display: grid;
+    place-items: center;
+}
+
+.hover__text{
+    font-size: 20px;
+    color: white;
+}
