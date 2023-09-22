@@ -1,0 +1,12 @@
+.framer__section{
+    border-bottom: 1px solid white;
+    padding-block: 100px;
+}
+
+.framer__title{
+    font-size: 25px;
+    color: white;
+    width: max-content;
+    border-bottom: 3px solid #ffc300;
+    margin-block-end: 20px;
+}
