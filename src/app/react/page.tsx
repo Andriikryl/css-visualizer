@@ -4,6 +4,7 @@ import PropDrilling from "./propDrilling/PropDrilling";
 import ReactMap from "./ReactMap/ReactMap";
 import UseStateHook from "./useStateHook/UseStateHook";
 import UseRedurecHook from "./useReducerHook/UseRedurecHook";
+import UseEffectHook from "./useEffectHook/UseEffectHook";
 
 export default function ReactPage() {
   return (
@@ -12,6 +13,7 @@ export default function ReactPage() {
       <ReactMap />
       <UseStateHook />
       <UseRedurecHook />
+      <UseEffectHook />
       <PropDrilling />
     </>
   );

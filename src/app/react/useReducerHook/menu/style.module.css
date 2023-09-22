@@ -3,6 +3,7 @@
     border: 1px solid white;
     gap: 20px;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 .button{

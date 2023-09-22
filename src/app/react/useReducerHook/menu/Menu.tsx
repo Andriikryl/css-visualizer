@@ -48,7 +48,7 @@ export default function Menu() {
           )}
         </div>
       )}
-      <pre className={style.code__box}>
+      <div className={style.code__box}>
         <code className={style.code}>
           <span>const menuReducer = </span>{" "}
           <span>(current: Menu, action: Menu)</span>
@@ -59,7 +59,7 @@ export default function Menu() {
           return action;
           <span className={style.scope}>&#125;</span>
         </code>
-      </pre>
+      </div>
     </div>
   );
 }

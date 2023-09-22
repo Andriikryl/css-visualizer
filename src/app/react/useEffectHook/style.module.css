@@ -1,0 +1,24 @@
+.effect__section{
+    padding-block: 100px;
+    border-bottom: 1px solid white;
+}
+
+.effect__title{
+    font-size: 30px;
+    color: white;
+    width: max-content;
+    border-bottom: 1px solid #ffc300;
+    margin-block-end: 20px;
+}
+.accordion__body{
+    color: white;
+    padding-block-start: 20px;
+}
+
+.code{
+    display: block;
+    padding: 20px;
+    background-color: white;
+    font-size: 20px;
+    margin-block-end: 10px;
+}

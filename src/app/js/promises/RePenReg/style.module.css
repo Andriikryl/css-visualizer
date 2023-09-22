@@ -11,9 +11,11 @@
 
 .flex__size{
     align-items: center;
-    gap: 200px;
+    gap: clamp(10px, 5vw, 200px);
     margin-block-end: 50px;
 }
+
+
 
 .animation__block{
     display: flex;
@@ -112,4 +114,20 @@
 .button__group{
     display: flex;
     gap: 20px;
+}
+
+@media (max-width: 700px) {
+    .flex__size{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .resolve__description{
+        padding: 10px;
+    }
+    .regect__description{
+        padding: 10px;
+    }
+    .pending__description{
+        padding: 10px;
+    }
 }

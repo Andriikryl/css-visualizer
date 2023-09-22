@@ -17,11 +17,11 @@ export default function UseRedurecHook() {
       <Container>
         <h3 className={style.reducer__title}>useReducer hook</h3>
         <div>
-          <pre className={style.code__box}>
+          <div className={style.code__box}>
             <code className={style.code}>
               const [state, dispatch ] = useReducer(reducer, initialArg,init?)
             </code>
-          </pre>
+          </div>
           <div className={style.faq__box}>
             {defaultFAQs.map((faq, i) => (
               <Accordion key={i} title={faq.question} body={faq.answer} />

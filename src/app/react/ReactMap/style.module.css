@@ -1,6 +1,11 @@
 .map{
     padding-block: 100px;
 }
+
+.map__box{
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .map__title{
     width: max-content;
     color: white;

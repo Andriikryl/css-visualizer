@@ -15,7 +15,7 @@ export default function UseStateHook() {
       <Container>
         <h3 className={style.state__title}>useState</h3>
         <MainField className={style.state__box}>
-          <pre className={style.code__box}>
+          <div className={style.code__box}>
             <code className={style.code}>
               <span className={style.variabel}>const</span> [
               <span
@@ -47,7 +47,7 @@ export default function UseStateHook() {
               </span>{" "}
               )
             </code>
-          </pre>
+          </div>
           <div className={style.description__block}>
             <AnimatePresence>
               {activeTab === "state" && (

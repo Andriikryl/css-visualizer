@@ -1,7 +1,8 @@
 .flex__size{
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     margin-block-end: 50px;
+    flex-wrap: wrap;
 }
 .animation__block{
     display: flex;
