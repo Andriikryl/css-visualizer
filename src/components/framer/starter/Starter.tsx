@@ -4,7 +4,7 @@ import { MainField } from "@/components/mainField/MainField";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
-import { InputFrame } from "../InputFrame";
+import { InputFrame } from "../../inputFrame/InputFrame";
 import Button from "@/components/button/Button";
 
 export default function Starter() {

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { MainField } from "@/components/mainField/MainField";
 import { motion } from "framer-motion";
 import style from "./style.module.css";
-import { InputFrame } from "../InputFrame";
+import { InputFrame } from "../../inputFrame/InputFrame";
 
 export default function Transition() {
   return (
