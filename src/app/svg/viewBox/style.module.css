@@ -11,7 +11,7 @@
     padding-inline-start: 10px;
 }
 .svg__box{
-    width: 500px;
+    max-width: 500px;
     overflow: hidden;
     margin-block-end: 20px;
 }

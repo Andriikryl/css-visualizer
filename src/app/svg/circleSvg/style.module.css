@@ -1,0 +1,15 @@
+.circel{
+    margin-block-end: 100px;
+}
+.circel__title{
+    font-size: 30px;
+    color: white;
+    width: max-content;
+    border-bottom: 3px solid #ffc300;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+.box{
+    max-width: 500px;
+    margin-block-end: 20px;
+}
