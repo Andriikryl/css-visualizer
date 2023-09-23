@@ -1,0 +1,27 @@
+.line{
+    margin-block-end: 100px;
+}
+.line__box{
+    max-width: 500px;
+    margin-block-end: 20px;
+}
+
+.line__title{
+    font-size: 30px;
+    color: white;
+    width: max-content;
+    border-bottom: 3px solid #ffc300;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+
+.code__box{
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+.code__style{
+    color: red;
+}
