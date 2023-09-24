@@ -6,6 +6,7 @@ import UseStateHook from "./useStateHook/UseStateHook";
 import UseRedurecHook from "./useReducerHook/UseRedurecHook";
 import UseEffectHook from "./useEffectHook/UseEffectHook";
 import Renders from "./renders/Renders";
+import Counter from "./counter/Counter";
 
 export default function ReactPage() {
   return (
@@ -16,7 +17,8 @@ export default function ReactPage() {
       <UseRedurecHook />
       <UseEffectHook />
       <PropDrilling />
-      <Renders/>
+      <Renders />
+      <Counter />
     </>
   );
 }

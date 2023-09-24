@@ -22,6 +22,9 @@ export default function Renders() {
     <section className={style.render}>
       <Container>
         <h4 className={style.render__title}>Renders</h4>
+        <p className={style.state__description}>
+          The structure of the app is: A &gt; B &gt; C &gt; D.
+        </p>
         <MainField className={style.main__component}>
           <AnimatePresence>
             {state && (
