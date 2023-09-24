@@ -5,6 +5,7 @@ import ReactMap from "./ReactMap/ReactMap";
 import UseStateHook from "./useStateHook/UseStateHook";
 import UseRedurecHook from "./useReducerHook/UseRedurecHook";
 import UseEffectHook from "./useEffectHook/UseEffectHook";
+import Renders from "./renders/Renders";
 
 export default function ReactPage() {
   return (
@@ -15,6 +16,7 @@ export default function ReactPage() {
       <UseRedurecHook />
       <UseEffectHook />
       <PropDrilling />
+      <Renders/>
     </>
   );
 }
