@@ -1,0 +1,96 @@
+.track{
+    margin-block-end: 100px;
+}
+
+.app{
+    font-size: 30px;
+    color: white;
+    border-left: 3px solid #ffc300;
+    padding-inline-start: 10px;
+    display: block;
+    margin-block-end: 20px;
+}
+
+.inner__box{
+    width: 100%;
+}
+
+.state__box{
+    margin-block-end: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    border: 3px dashed hsla(115, 58%, 18%, 0.911);
+    background-color: whitesmoke;
+}
+
+.state{
+    padding: 20px;
+    display: block;
+    color: hsla(115, 58%, 18%, 0.911);
+    background-color: #a7c957;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.component__a{
+    border: 1px solid white;
+    margin-block-start: 20px;
+    background-color: #6d597a;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+.component__b{
+    border: 1px solid white;
+    padding: 20px;
+    margin-block-start: 20px;
+    background-color: #b56576;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+.component__c{
+    margin-block-start: 20px;
+    border: 1px solid white;
+    background-color: #e56b6f;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.component__title{
+    display: block;
+    margin-block-end: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.main__box{
+    background-color: #355070;
+}
+
+.mess__box{
+    height: 40px;
+}
+
+.render__mess{
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.state__description{
+    background-color: whitesmoke;
+    padding: 20px;
+    font-size: 20px;
+}

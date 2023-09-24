@@ -7,6 +7,7 @@ import UseRedurecHook from "./useReducerHook/UseRedurecHook";
 import UseEffectHook from "./useEffectHook/UseEffectHook";
 import Renders from "./renders/Renders";
 import Counter from "./counter/Counter";
+import Track from "./track/Track";
 
 export default function ReactPage() {
   return (
@@ -19,6 +20,7 @@ export default function ReactPage() {
       <PropDrilling />
       <Renders />
       <Counter />
+      <Track />
     </>
   );
 }
